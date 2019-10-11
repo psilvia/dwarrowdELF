@@ -1,0 +1,15 @@
+service dwarrowdelf
+{
+        disable = no
+        type = UNLISTED
+        wait = no
+        server = /home/dwarrowdelf/dwarrowdelf
+        socket_type = stream
+        protocol = tcp
+        user = dwarrowdelf
+        port = 13371
+        flags = REUSE
+        per_source = 3
+        rlimit_cpu = 3
+        nice = 18
+}
