@@ -20,7 +20,7 @@ Setup
 =====
 
 The binary and libraries were available only if you solved the first part (DwarrowdELF - Exploration).
-The first part had as its resources only the remote service and [bin/gotplt.txt](gotplt.txt) .
+The first part had as its resources only the remote service and [gotplt.txt](bin/gotplt.txt).
 
 To solve it as it was intended, you have to set up a docker using the provided Dockerfile and solve the first part by interacting with the service:
 ```console
@@ -28,4 +28,4 @@ sudo docker build -t ptb_dwarrowdelf:v1 .
 sudo docker run  -p 127.0.0.1:13371:13371 --rm  -it ptb_dwarrowdelf:v1
 ```
 
-For the second part, you may use the [bin/dwarrowdelf](binary) and libraries.
+For the second part, you may use the [binary](bin/dwarrowdelf) and libraries.
